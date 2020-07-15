@@ -1,4 +1,4 @@
-# AR process in Pytorch
+# Autoregressive (AR) processes with Pytorch
 This project allows you to generate data from autoregressive (AR) processes, and fit an AR process to data. The fitting of AR process is implemented in [scikit-learn](https://scikit-learn.org/stable/) for simple models like Gaussian, Bernoulli, and Poisson AR processes when the maximum likelihood (ML) estimation is used to fit the parameters. But since this setting is very limited, we have implemented the estimation in Pytorch as well. This allows us to fit almost any AR process with any general loss function (negative log-likelihood being an example), using gradient based methods. In each case, there is a base model for generating data and a base model for fitting models, and implementing new AR processes is as simple as defining a sampling function based on the mean paramters of AR process. Similarly, for estimation, implementing estimators for new processes is as simple as implementing negative-log-likelihood loss or even using losses that are already implemented.
 
 ## Prerequisites
