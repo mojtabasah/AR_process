@@ -23,7 +23,7 @@ This file implements regression for simple AR models using Scikit-Learn. Example
 regressor = BAR_regressor(N=5, p=10)
 regressor.fit(data, lam=0.1)
 ```
-where $\lambda$ corresponds to $\ell_1$ regularization (scaled accroding to number of samples and paramters). This would fit the BAR using regularized maximum likelihood.
+where lam (<img src="https://render.githubusercontent.com/render/math?math={\lambda}">) corresponds to <img src="https://render.githubusercontent.com/render/math?math={\ell_1}"> regularization (scaled accroding to number of samples and paramters). This would fit the BAR using regularized maximum likelihood.
 The paramters can be recovered as follows:
 ```
 bias = regressor.bias
